@@ -1,0 +1,335 @@
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        box-sizing: border-box;
+        background-color: white;
+        overflow-x: hidden;
+    }
+
+    p {
+        color: black;
+        font-family: Helvetica, sans-serif;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+    }
+
+    .options {
+        font-family: Helvetica, sans-serif;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .options a {
+        padding: 10px;
+    }
+
+    .options a {
+        width: 80px;
+        color: black;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 10x;
+    }
+
+    .options a:hover {
+        transform: scale(1.05);
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 50px;
+        color: black;
+        font-family: Helvetica, sans-serif;
+        font-size: 15px;
+    }
+
+    .contents {
+        display: grid;  
+        grid-template-columns: repeat(5, 1fr);
+        gap: 50px;
+    }
+
+
+    .contents a {
+        text-decoration: none;
+        color: black;
+        display: inline-block;
+    }
+
+    .contents a img {
+        border: 2px solid transparent;
+        transition: transform 0.3s ease, border-color 0.3s ease;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .contents a img:hover {
+        transform: scale(1.05);
+        border-color: black;
+    }
+
+    .searchbox {
+        display: flex;
+        align-items: center;
+        background-color: #fafafa;
+        border: 1px solid #e5e5e5;
+        border-radius: 4px;
+        padding: 6px 12px;
+        width: 300px;
+        transition: all 0.3s ease;
+    }
+
+    .search {
+        position: relative;
+        top: -15px;
+        left: 900px;
+    }
+
+    .searchbox input {
+        flex: 1;
+        border: none;
+        background: transparent;
+        outline: none;
+        font-family: 'Helvetica', sans-serif;
+        font-size: 15px;
+        color: black;
+    }
+
+
+    .searchbox input::placeholder {
+        color: #bcbcbc;
+    }
+
+
+    .searchbutton {
+        background: transparent;
+        border: none;
+        color: #000000;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin-left: 8px;
+        transition: transform 0.2s ease;
+    }
+
+
+    .searchbutton:hover {
+        transform: scale(1.1);
+    }
+
+    .searchbox:focus-within {
+        border-color: #000000;
+        background-color: #ffffff;
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .freeshipping {
+        background-color: black;
+        height: 30px;
+        width: 100%;
+        font: 15px;
+        text-align: center;
+        width: 100%;
+        padding: 12px 0;
+    }
+
+    .freeshipping p {
+        margin: 0;
+        color: white;
+    }
+
+    .freeshipping strong {
+        margin-right: 6px;
+    }
+
+    .code strong {
+        margin-right: 6px;
+    }
+
+    .logo {
+        margin-left: 5px;
+        padding-left: 10px;
+    }
+
+    .newarrivals p {
+        font-size: 40px;
+    }
+
+    .shoelogo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 40px 0 20px 0;
+    }
+
+    .shoelogo img {
+        height: 100px;
+        width: auto;
+    }
+
+    .pricecontainer {
+        gap: 8px;
+        margin-top: 4px;
+        font-family: 'Helvetica', sans-serif;
+        font-size: 15px;
+    }
+
+    .originalprice {
+        color: #999999;
+        text-decoration: line-through;
+        font-size: 14px;
+    }
+
+
+    .sale-price {
+        color: red;
+        font-weight: bold;
+    }
+
+    .buttonposition {
+        position: relative;
+        top: -270px;
+        left: 500px;
+    }
+
+    .pricetag {
+        position: relative;
+        top: 0;
+        left: 492px;
+        margin: 0;
+    }
+
+    .shoename {
+        position: relative;
+        top: 65px;
+        left: 100px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .shoe img {
+        position: relative;
+        left: 100px;
+    }
+
+    .buy {
+        position: relative;
+        bottom: 760px;
+        left: 900px;
+    }
+
+    .add {
+        position: relative;
+        bottom: 760px;
+        left: 900px;
+    }
+
+    .purchase {
+        display: flex;
+        gap: 12px;
+        margin-top: 20px;
+        width: 250px;
+    }
+
+    .purchase button {
+        flex: 1;
+        padding: 14px 24px;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        border-radius: 6px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .buynow {
+        background-color: black;
+        color: white;
+        border: 2px solid black;
+    }
+
+    .buynow:hover {
+        background-color: black;
+        color: white;
+        transform: translateY(-2px);
+    }
+
+    .addtocart {
+        background-color: white;
+        color: black;
+        border: 2px solid black;
+    }
+
+    .addtocart:hover {
+        background-color: white;
+        color: black;
+        transform: translateY(-2px);
+    }
+
+    .purchase button:active {
+        transform: translateY(0);
+    }
+
+    .size-selector-container {
+        font-family: 'Helvetica', Arial, sans-serif;
+        max-width: 350px;
+        margin: 20px 0;
+    }
+
+    .size-header {
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.9rem;
+        font-weight: bold;
+        margin-bottom: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+
+    .size-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 8px;
+    }
+
+    .size-btn {
+        background-color: #ffffff;
+        color: #000000;
+        border: 1px solid #e5e5e5;
+        padding: 12px 0;
+        font-size: 0.9rem;
+        font-weight: 500;
+        cursor: pointer;
+        border-radius: 4px;
+        transition: all 0.2s ease;
+    }
+
+    .size-btn:hover {
+        border-color: #000000;
+        background-color: #f5f5f5;
+    }
+
+    .size-btn:focus, .size-btn:active {
+        background-color: #000000;
+        color: #ffffff;
+        border-color: #000000;
+        outline: none;
+    }
